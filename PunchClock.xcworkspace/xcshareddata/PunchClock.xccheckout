@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>11F1AAD5-30D1-46FF-87E5-1E05CFF3D457</string>
+	<string>C67A6CC3-39D6-4261-B605-A116F72FEAD0</string>
 	<key>IDESourceControlProjectName</key>
 	<string>PunchClock</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>2477A61B-9B4A-4422-8AA8-2F1DECB186BA</key>
+		<key>526A425F-0963-4683-8E9D-06E1D555A644</key>
 		<string>https://github.com/IntrepidPursuits/PunchClock.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>PunchClock.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>2477A61B-9B4A-4422-8AA8-2F1DECB186BA</key>
+		<key>526A425F-0963-4683-8E9D-06E1D555A644</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>2477A61B-9B4A-4422-8AA8-2F1DECB186BA</string>
+	<string>526A425F-0963-4683-8E9D-06E1D555A644</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>2477A61B-9B4A-4422-8AA8-2F1DECB186BA</string>
+			<string>526A425F-0963-4683-8E9D-06E1D555A644</string>
 			<key>IDESourceControlWCCName</key>
 			<string>PunchClock</string>
 		</dict>
