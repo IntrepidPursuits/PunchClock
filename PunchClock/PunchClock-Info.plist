@@ -38,7 +38,6 @@
 		<string>armv7</string>
 		<string>bluetooth-le</string>
 		<string>location-services</string>
-		<string>gps</string>
 	</array>
 	<key>UIStatusBarHidden</key>
 	<true/>

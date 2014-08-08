@@ -163,8 +163,13 @@
 	_locationManager.distanceFilter = kCLLocationAccuracyBest;
 	_locationManager.activityType = CLActivityTypeAutomotiveNavigation;
 
-	_beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc] initWithUUIDString:beaconUUID]
-													   identifier:officeBeaconIdentifier];
+    if (beaconMajor >= 0 && beaconMinor >= 0) {
+        // Set beaconMajor & minor in constants.h if you'd like to use a specific iBeacon
+        _beaconRegion = [[CLBeaconRegion alloc]initWithProximityUUID:[[NSUUID alloc] initWithUUIDString:beaconUUID] major:beaconMajor minor:beaconMinor identifier:officeBeaconIdentifier];
+    }
+    else {
+        _beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc] initWithUUIDString:beaconUUID] identifier:officeBeaconIdentifier];
+    }
 	_beaconRegion.notifyEntryStateOnDisplay = YES;
 	_beaconRegion.notifyOnEntry = YES;
 	_beaconRegion.notifyOnExit = YES;
