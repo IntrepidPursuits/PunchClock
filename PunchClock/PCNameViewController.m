@@ -22,7 +22,7 @@
 	[super viewDidAppear:animated];
 
 	self.nameField.layer.cornerRadius = 3.0;
-	
+	self.nameField.autocapitalizationType = UITextAutocapitalizationTypeNone;
 	self.nameField.text = [[NSUserDefaults standardUserDefaults] stringForKey:@"username"];
 	[self.nameField becomeFirstResponder];
 }
