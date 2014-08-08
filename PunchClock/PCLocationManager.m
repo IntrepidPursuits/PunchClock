@@ -163,6 +163,7 @@
 	_locationManager.distanceFilter = kCLLocationAccuracyBest;
 	_locationManager.activityType = CLActivityTypeAutomotiveNavigation;
 
+    /*
     if (beaconMajor >= 0 && beaconMinor >= 0) {
         // Set beaconMajor & minor in constants.h if you'd like to use a specific iBeacon
         _beaconRegion = [[CLBeaconRegion alloc]initWithProximityUUID:[[NSUUID alloc] initWithUUIDString:beaconUUID] major:beaconMajor minor:beaconMinor identifier:officeBeaconIdentifier];
@@ -189,7 +190,7 @@
 
 	[self startRanging];
 	[self enableGeoFence];
-
+*/
 }
 
 #pragma mark - KVO
