@@ -1,9 +1,9 @@
 #!/usr/bin/env sh
 
-if [ ! -f PunchClock/constants.h ]; then
-  cp PunchClock/constants.h.sample PunchClock/constants.h
-  echo "Copied PunchClock/constants.h.sample to PunchClock/constants.h"
-fi
+# if [ ! -f PunchClock/constants.h ]; then
+#   cp PunchClock/constants.h.sample PunchClock/constants.h
+#   echo "Copied PunchClock/constants.h.sample to PunchClock/constants.h"
+# fi
 
 if [ ! -f PunchClock/PunchClock_Beta.xcconfig ]; then
   cp PunchClock/PunchClock_Beta.xcconfig.sample PunchClock/PunchClock_Beta.xcconfig
