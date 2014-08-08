@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HjO-G5-yxc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HjO-G5-yxc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -580,9 +580,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nGn-ql-MLA" userLabel="Status View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGn-ql-MLA" userLabel="Status View">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
                                 <color key="backgroundColor" red="0.270588249" green="0.18823531269999999" blue="0.26274511220000002" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="OhM-j1-Tab"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOS-f3-3eO" userLabel="Toolbar">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -596,11 +599,12 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.270588249" green="0.18823531269999999" blue="0.26274511220000002" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="QXK-Un-aCd"/>
                                     <constraint firstAttribute="centerY" secondItem="wle-JZ-zpa" secondAttribute="centerY" id="Ryg-WZ-1bu"/>
                                     <constraint firstAttribute="centerX" secondItem="wle-JZ-zpa" secondAttribute="centerX" constant="-4.5" id="v2E-IJ-hEq"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yRk-pg-sQs">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yRk-pg-sQs">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="AhI-65-YQB">
@@ -656,13 +660,22 @@
                                         </connections>
                                     </tableView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="dX9-b3-pNA"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="AR2-Nn-z3m" firstAttribute="top" secondItem="VOS-f3-3eO" secondAttribute="bottom" constant="455" id="91b-l0-ECU"/>
+                            <constraint firstAttribute="centerX" secondItem="yRk-pg-sQs" secondAttribute="centerX" id="1rE-zR-mbB"/>
+                            <constraint firstAttribute="bottom" secondItem="yRk-pg-sQs" secondAttribute="bottom" id="2Qn-e1-scG"/>
+                            <constraint firstItem="VOS-f3-3eO" firstAttribute="top" secondItem="nGn-ql-MLA" secondAttribute="bottom" id="Epm-2d-9Fv"/>
+                            <constraint firstItem="nGn-ql-MLA" firstAttribute="leading" secondItem="dE6-QQ-SxI" secondAttribute="leading" id="EsX-SQ-Pcg"/>
                             <constraint firstItem="VOS-f3-3eO" firstAttribute="top" secondItem="pzl-rx-y5P" secondAttribute="bottom" id="IZc-uR-PCB"/>
                             <constraint firstAttribute="centerX" secondItem="VOS-f3-3eO" secondAttribute="centerX" id="TeZ-km-sTj"/>
+                            <constraint firstItem="nGn-ql-MLA" firstAttribute="top" secondItem="dE6-QQ-SxI" secondAttribute="top" id="WIn-v7-dDe"/>
+                            <constraint firstItem="yRk-pg-sQs" firstAttribute="top" secondItem="VOS-f3-3eO" secondAttribute="bottom" id="hGx-GQ-Z4I"/>
+                            <constraint firstItem="VOS-f3-3eO" firstAttribute="top" secondItem="nGn-ql-MLA" secondAttribute="bottom" id="nAD-qs-dyD"/>
                             <constraint firstItem="VOS-f3-3eO" firstAttribute="leading" secondItem="dE6-QQ-SxI" secondAttribute="leading" id="u2E-e3-e8e"/>
                             <constraint firstAttribute="trailing" secondItem="VOS-f3-3eO" secondAttribute="trailing" id="zQG-Mx-Cmp"/>
                         </constraints>
